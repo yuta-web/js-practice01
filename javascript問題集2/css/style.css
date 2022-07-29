@@ -277,3 +277,73 @@ body{
 }
 
 /* スライダーここまで */
+
+/* 以下、武藤追加 */
+
+/* Q３に使用 */
+.is-hidden{
+	display: none;
+}
+
+/* Q５に使用 */
+.toggle-menu.is-show > dd {
+    display: block;
+}
+
+/* Q６に使用 */
+.drower{
+	position: fixed;
+	top: 0;
+	left: 100%;
+	right: 0;
+	bottom: 0;
+	transition: all .3s;
+	overflow: hidden;
+	background-color: #000;
+	z-index: 1;
+}
+
+.drower-menu{
+	padding-top: 300px;
+}
+
+.drower-menu > li{
+	margin-top: 40px;
+	font-size: 40px;
+	text-align: center;
+	color: #fff;
+}
+
+.drower.is-open{
+	left: 0;
+}
+
+.hamburger.is-open span{
+	transform: rotate(135deg);
+}
+
+.hamburger.is-open span,
+.hamburger.is-open span::before,
+.hamburger.is-open span::after{
+	z-index: 10;
+}
+
+.hamburger.is-open span::before,
+.hamburger.is-open span::after{
+	top: 0;
+	transform: rotate(90deg);
+}
+.hamburger.is-open span::after{
+	opacity: 0;
+}
+
+/* Q８に使用 */
+.modal-content.is-show ,
+.js-modal-close.is-show{
+    display: block;
+}
+
+/* Q１０に使用 */
+.prev-slider {
+    display: none;
+}
